@@ -12,5 +12,5 @@ before_install: gem install bundler
 
 script:
   - rspec testing -f d
-  - ruby -e "puts \"Files found by glob: #{Dir.glob('testing/rspec/spec/**/*_spec.rb')}\""
+  - 'ruby -e "puts \"Files found by glob: #{Dir.glob(\"testing/rspec/spec/**/*_spec.rb\")}\""'
   - rspec --pattern testing/rspec/spec/**/*_spec.rb -f d
